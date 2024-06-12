@@ -10,16 +10,15 @@ The Emergency Broadcast Transcription project aims to capture public emergency b
 - **Real-time Processing**: Process and provide transcriptions in near real-time.
 
 ## Project Structure
+```
 emergency-broadcast-transcription/
 ├── src/
-│ ├── audio_capture.py
-│ ├── transcribe.py
-│ └── web_server.py
+│   ├── audio_capture.py
+│   ├── transcribe.py
+│   └── web_server.py
 ├── requirements.txt
 └── README.md
-
-markdown
-Copy code
+```
 
 ## Setup
 
@@ -62,47 +61,44 @@ Copy code
 Run the audio capture script to start capturing emergency broadcasts:
 ```sh
 python src/audio_capture.py
-Transcribing Audio
+```
+
+### Transcribing Audio
 Transcribe the captured audio file:
-
-sh
-Copy code
+```sh
 python src/transcribe.py
-Running the Web Server
-Start the Flask web server to serve the transcriptions:
+```
 
-sh
-Copy code
+### Running the Web Server
+Start the Flask web server to serve the transcriptions:
+```sh
 python src/web_server.py
-API Endpoints
-GET /transcriptions: Retrieve the latest transcriptions.
-POST /transcriptions: (Internal use) Add new transcriptions to the database.
-Example Requests
-Retrieve Transcriptions:
-sh
-Copy code
-curl -X GET http://localhost:5000/transcriptions
-Contributing
+```
+
+### API Endpoints
+- **GET /transcriptions**: Retrieve the latest transcriptions.
+- **POST /transcriptions**: (Internal use) Add new transcriptions to the database.
+
+### Example Requests
+- **Retrieve Transcriptions**:
+    ```sh
+    curl -X GET http://localhost:5000/transcriptions
+    ```
+
+## Contributing
 Contributions are welcome! Please fork this repository and submit pull requests.
 
-License
+## License
 This project is licensed under the MIT License.
 
-Acknowledgements
-Inspired by the need for efficient and accessible emergency broadcast information.
-Utilizes open-source tools and libraries such as Flask and SpeechRecognition.
-Troubleshooting
-Ensure that the SDR receiver is properly connected and configured.
-Verify that the necessary software dependencies are installed.
-Check the Flask server logs for any errors.
-Contact
+## Acknowledgements
+- Inspired by the need for efficient and accessible emergency broadcast information.
+- Utilizes open-source tools and libraries such as Flask and SpeechRecognition.
+
+## Troubleshooting
+- Ensure that the SDR receiver is properly connected and configured.
+- Verify that the necessary software dependencies are installed.
+- Check the Flask server logs for any errors.
+
+## Contact
 For questions or support, please open an issue on this repository or contact me at [your email address].
-
-css
-Copy code
-
-This README provides a comprehensive overview of your project, including setup instructions, usage examples, and API details. Adjust the repository URL, email address, and any other placeholders to fit your actual information. Let me know if you need any more specific details or additional sections!
-
-
-
-
